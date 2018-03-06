@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class mergeSort {
 	
 	private int[] arr; 
-	private int[] ans;
+	private int[] helper;
 	private int length;
 	
 	public mergeSort(int[] arr) {
@@ -20,7 +20,7 @@ public class mergeSort {
 	public void sort(int[] arr) {
 		this.arr = arr;
 		length = arr.length;
-		this.ans = new int [length];
+		this.helper = new int [length];
 		mergeSort(0, length - 1);
 	}
 	
@@ -41,7 +41,7 @@ public class mergeSort {
 	private void merge(int low, int middle, int high) {
 		// Copy both parts into the ans array
 		for (int i = low; i <= high; i++) {
-			ans[i] = arr[i];
+			helper[i] = arr[i];
 		}
 		
 		int i = low;
@@ -51,18 +51,18 @@ public class mergeSort {
 		// Copy the smallest values from either the left or the right side back
 		// to the original array
 		while (i <= middle && j <= high) {
-			if (ans[i] <= ans[j]) {
-				arr[k] = ans[i];
+			if (helper[i] <= helper[j]) {
+				arr[k] = helper[i];
 				i++;
 			} else {
-				arr[k] = ans[j];
+				arr[k] = helper[j];
 				j++;
 			}
 			k++;
 		}
 		// Copy the rest of the left side of the array into the target array
 		while (i <= middle ) {
-			arr[k] = ans[i];
+			arr[k] = helper[i];
 			k++;
 			i++;
 		}
