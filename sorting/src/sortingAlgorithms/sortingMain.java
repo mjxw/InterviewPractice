@@ -2,6 +2,7 @@ package sortingAlgorithms;
 
 import sortingAlgorithms.bubbleSort;
 import sortingAlgorithms.quickSort;
+import sortingAlgorithms.mergeSort;
 
 public class sortingMain {
 
@@ -16,9 +17,13 @@ public class sortingMain {
 //		bubbleSort.basicSort(arr);
 		
 		//QuickSort: 
-		quickSort quickSort = new quickSort(arr);
-		quickSort.sort(arr, 0, arr.length - 1, 0);
-		quickSort.print(arr);
+//		quickSort quickSort = new quickSort(arr);
+//		quickSort.sort(arr, 0, arr.length - 1, 0);
+//		quickSort.print(arr);
+		
+		//MergeSort: 
+		mergeSort mergeSort = new mergeSort();
+		
 	}
 
 
