@@ -11,7 +11,9 @@ public class sortingMain {
 		
 		//BubbleSort: 
 		bubbleSort bubbleSort = new bubbleSort();
-		bubbleSort.basicSort(arr);
+		
+//		bubbleSort.optimizedSort(arr);
+//		bubbleSort.basicSort(arr);
 	}
 
 
