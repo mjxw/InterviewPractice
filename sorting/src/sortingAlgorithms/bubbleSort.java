@@ -13,6 +13,7 @@ public class bubbleSort {
 		System.out.println("Constructing a bubbleSort");
 	}
 	
+	// Not optimized because you iterate arr.length times, even if there is no more sorting
 	public void basicSort(int[] arr) {
 		System.out.println();
 		System.out.println("BubbleSort (basic): O(n^2) ");
@@ -33,6 +34,7 @@ public class bubbleSort {
 		System.out.println(" -After: " + Arrays.toString(arr));
 	}
 	
+	// Optimized by breaking out of the loop if inner loop doesn't sort anything
 	public void optimizedSort(int[] arr) {
 		System.out.println();
 		System.out.println("BubbleSort (optimized): O(n) ");
@@ -55,7 +57,6 @@ public class bubbleSort {
 			}
 			System.out.println("    -Iteration " + (i + 1) + ": " + Arrays.toString(arr));
 		}
-		
 		System.out.println();
 		System.out.println(" -After: " + Arrays.toString(arr));
 	}
