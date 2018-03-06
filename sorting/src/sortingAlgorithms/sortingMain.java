@@ -22,7 +22,9 @@ public class sortingMain {
 //		quickSort.print(arr);
 		
 		//MergeSort: 
-		mergeSort mergeSort = new mergeSort();
+		mergeSort mergeSort = new mergeSort(arr);
+		mergeSort.sort(arr);
+		mergeSort.print(arr);
 		
 	}
 

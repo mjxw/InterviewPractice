@@ -6,6 +6,7 @@ public class quickSort {
 
 	public quickSort(int[] arr) {
 		System.out.println("*Initiated QuickSort*");
+		System.out.println("QuickSort can sort inline an existing collection");
 		System.out.println();
 		System.out.println("QuickSort: O(n log(n)) ");
 		System.out.println(" -Original: " + Arrays.toString(arr));
