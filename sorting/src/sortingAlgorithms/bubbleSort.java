@@ -3,14 +3,9 @@ package sortingAlgorithms;
 import java.util.Arrays;
 
 public class bubbleSort {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 	
 	public bubbleSort() {
-		System.out.println("Constructing a bubbleSort");
+		System.out.println("(*Initiated BubbleSort*");
 	}
 	
 	// Not optimized because you iterate arr.length times, even if there is no more sorting
