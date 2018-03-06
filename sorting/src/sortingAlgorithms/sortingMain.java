@@ -16,7 +16,9 @@ public class sortingMain {
 //		bubbleSort.basicSort(arr);
 		
 		//QuickSort: 
-		quickSort quickSort = new quickSort();
+		quickSort quickSort = new quickSort(arr);
+		quickSort.sort(arr, 0, arr.length - 1, 0);
+		quickSort.print(arr);
 	}
 
 
