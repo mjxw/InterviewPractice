@@ -12,7 +12,6 @@ public class brackets {
 		bracket(input2);
 	}
 	
-	
 	// Solution is O(n * m). n is the size of the string array, m is the number of characters inside each string from the input array. 
 	public static void bracket(String[] arr) {
 		// Create a string array of size of the first index of input (denotes how many strings there are)
@@ -38,7 +37,7 @@ public class brackets {
 				} else if (Character.toString(c).contains("(")) {
 					stack.push(")");
 				} else if (Character.toString(c).contains("[")) {
-					stack.push("]");
+					stack.push("]"); 
 					
 				// Else, when we see a closing brace, we will check the stack to see if the closing brace exists in there. 
 				// If it does, then that means we've seen the corresponding starting brace, and it happens to be the most recent 

@@ -47,13 +47,18 @@ public class anagrams {
 			// to stringB. 
 			// 2) We will check if we've seen a character in stringB by checking if there's a key-value pair for 
 			// stringB's character key in the HashMap containing occurrences for stringA. 
+			
+			
 			// 3) If there is a mapping for that key-value pair AND the value isn't 0, then that means that character
 			// exists and can be used to potentially form an anagram. So we will consume that character and -1 the value 
 			// from that character's key-value pairing
-			// 4) ...Otherwise, either we  haven't seen that character or we have put there isn't enough of that character
+			
+			
+			// 4) ...Otherwise, either we  haven't seen that character or there isn't enough of that character
 			// i.e, the value is 0 and availability of that character has been depleted. 
 			// So we increment count to represent the difference in characters, which is the answer we need to 
 			// keep track of
+			
 			
 			for (int j = 0; j < stringB.length(); j++) {
 				if (map.containsKey(stringB.charAt(j)) &&  map.get(stringB.charAt(j)) != 0) {

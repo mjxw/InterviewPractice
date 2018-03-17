@@ -59,7 +59,7 @@ public class arrayDegrees {
 				degree = value[0]; //update degree to that key's degree
 				ans = value[2] - value[1] + 1; //compute the min length
 			
-			// Else, we reach a point where the degree is equal to the current max degree. 
+			// Else, we reach a point where the degree of this key is equal to the current max degree. 
 			// In that case, we need to compare our previous ans by doing Math.min with the old ans and the new min length for this specific key where 
 			// value[0] == degree
 			} else if (value[0] == degree) {
