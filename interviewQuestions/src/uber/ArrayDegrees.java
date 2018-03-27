@@ -4,7 +4,7 @@ package uber;
 import java.util.HashMap;
 import java.util.Map;
 
-public class arrayDegrees {
+public class ArrayDegrees {
 	public static void main(String[]args) {
 		int[] input1 = new int[] {1, 2, 2, 3, 1};
 		int[] input2 = new int[] {1, 1, 2, 1, 2, 2};
