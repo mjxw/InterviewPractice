@@ -62,9 +62,12 @@ public class RateLimiter {
 			if (!q.isEmpty()) {
 				this.activeCalls++;
 				outgoing(task);
-				q.poll(); 
-				this.activeCalls--;	
 			}
+		}
+		
+		if (this.activeCalls < this.maxCalls) {
+			q.poll(); 
+			this.activeCalls--;	
 		}
 	}
 
