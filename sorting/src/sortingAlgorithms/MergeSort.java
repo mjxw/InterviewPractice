@@ -2,17 +2,17 @@ package sortingAlgorithms;
 
 import java.util.Arrays;
 
-public class mergeSort {
+public class MergeSort {
 	
 	private int[] arr; 
 	private int[] helper;
 	private int length;
 	
-	public mergeSort(int[] arr) {
+	public MergeSort(int[] arr) {
 		System.out.println("*Initiated MergeSort*");
 		System.out.println("MergeSort has to create a copy of the collection i.e. NOT inline");
 		System.out.println();
-		System.out.println("QuickSort: O(n log(n)) ");
+		System.out.println("MergeSort: O(n log(n)) ");
 		System.out.println(" -Original: " + Arrays.toString(arr));
 		System.out.println();
 	}

@@ -2,10 +2,10 @@ package sortingAlgorithms;
 
 import java.util.Arrays;
 
-public class bubbleSort {
+public class BubbleSort {
 	
-	public bubbleSort() {
-		System.out.println("(*Initiated BubbleSort*");
+	public BubbleSort() {
+		System.out.println("*Initiated BubbleSort*");
 	}
 	
 	// Not optimized because you iterate arr.length times, even if there is no more sorting
